@@ -1,0 +1,118 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+/* Style de la carte */
+.map {
+    height: 600px;
+    width: 100%;
+}
+
+/* Style de la mini-map */
+.ol-overviewmap {
+    bottom: 32px;
+}
+
+/* Style des coordonnées */
+.custom-mouse-position {
+    text-align: center;
+}
+
+/**
+ * Style de la PopUp
+ */
+ .ol-popup {
+    position: absolute;
+    background-color: white;
+    -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    bottom: 12px;
+    left: -50px;
+    min-width: 280px;
+}
+
+.ol-popup:after,
+.ol-popup:before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.ol-popup:after {
+    border-top-color: white;
+    border-width: 10px;
+    left: 48px;
+    margin-left: -10px;
+}
+
+.ol-popup:before {
+    border-top-color: #cccccc;
+    border-width: 11px;
+    left: 48px;
+    margin-left: -11px;
+}
+
+.ol-popup-closer {
+    text-decoration: none;
+    position: absolute;
+    top: 2px;
+    right: 8px;
+}
+
+.ol-popup-closer:after {
+    content: "✖";
+}
+
+/**
+ * The zoomslider in the second map shall be placed between the zoom-in and
+ * zoom-out buttons.
+ */
+ .ol-zoomslider {
+    top: .5em;
+    left: .5em;
+    height: 160px;
+}
+.ol-zoom .ol-zoom-out {
+    margin-top: 164px;
+}
+.ol-zoomslider {
+    background-color: transparent;
+    top: 2.1em;
+}
+
+.ol-touch .ol-zoom .ol-zoom-out {
+    margin-top: 212px;
+}
+.ol-touch .ol-zoomslider {
+    top: 2.75em;
+}
+
+.ol-zoom-in.ol-has-tooltip:hover [role=tooltip],
+.ol-zoom-in.ol-has-tooltip:focus [role=tooltip] {
+    top: 3px;
+}
+
+.ol-zoom-out.ol-has-tooltip:hover [role=tooltip],
+.ol-zoom-out.ol-has-tooltip:focus [role=tooltip] {
+    top: 232px;
+}
+
+/* ZoomToExtent */
+.ol-zoom-extent {
+    top: 234px;
+    left: .5em;
+}
+
+/* Rotation */
+.ol-rotate {
+    top: 40px;
+}
